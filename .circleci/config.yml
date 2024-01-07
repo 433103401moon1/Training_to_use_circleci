@@ -15,10 +15,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "install 1dependencies"
+          name: "install dependencies"
           command: |
             python3 -m venv venv
-            . venv/Scripts/activate
+            . venv/bin/activate
             pip install -r requirements.txt
       - run:
           name: "run tests"
